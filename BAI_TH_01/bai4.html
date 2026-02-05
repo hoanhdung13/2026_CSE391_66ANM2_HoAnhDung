@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    padding:20px;
+}
+.form{
+    width:760px;
+    margin:auto;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:15px;
+}
+.section{
+    font-size:14px;
+    font-weight:bold;
+    border-bottom:1px solid #ccc;
+    margin:20px 0 10px;
+    padding-bottom:5px;
+}
+table{
+    width:100%;
+    border-spacing:8px;
+    font-size:13px;
+}
+td.label{
+    width:180px;
+    text-align:right;
+    vertical-align:top;
+}
+input[type=text], select{
+    width:260px;
+    padding:4px;
+    border:1px solid #999;
+}
+textarea{
+    width:98%;
+    height:90px;
+    border:1px solid #999;
+}
+.toolbar{
+    border:1px solid #999;
+    background:#eee;
+    padding:5px;
+    font-size:12px;
+}
+.toolbar span{
+    padding:0 6px;
+    border-right:1px solid #999;
+}
+.captcha{
+    font-family:monospace;
+    font-size:22px;
+    background:#eaeaea;
+    padding:5px 10px;
+    letter-spacing:4px;
+    display:inline-block;
+}
+.buttons{
+    text-align:right;
+    margin-top:15px;
+}
+button{
+    padding:6px 14px;
+}
+.small{
+    font-size:11px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form">
+
+
+<div class="section">Basic Info</div>
+<table>
+<tr>
+    <td class="label">Employee ID</td>
+    <td>9</td>
+</tr>
+<tr>
+    <td class="label">Last Name</td>
+    <td>Dodsworth</td>
+</tr>
+<tr>
+    <td class="label">First Name</td>
+    <td><input type="text" value="Anne"></td>
+</tr>
+<tr>
+    <td class="label">Gender</td>
+    <td>
+        <label><input type="radio" name="g"> Male</label>
+        <label><input type="radio" name="g"> Female</label>
+        <label><input type="radio" name="g" checked> XXX</label>
+        <label><input type="radio" name="g"> ZZZ</label>
+    </td>
+</tr>
+<tr>
+    <td class="label">Title</td>
+    <td><input type="text" value="Sales Representative"></td>
+</tr>
+<tr>
+    <td class="label">Suffix</td>
+    <td><input type="text" value="Ms."></td>
+</tr>
+<tr>
+    <td class="label">BirthDate</td>
+    <td><input type="text" value="1969-07-02 00:00:00"></td>
+</tr>
+<tr>
+    <td class="label">HireDate</td>
+    <td><input type="text" value="1994-11-15 00:00:00"></td>
+</tr>
+<tr>
+    <td class="label">SSN # (if applicable)</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td class="label">Reports To</td>
+    <td>
+        <select>
+            <option>Buchanan</option>
+        </select>
+    </td>
+</tr>
+</table>
+
+<div class="section">Contact Info</div>
+<table>
+<tr>
+    <td class="label">Email</td>
+    <td><input type="text" value="name@example.com"></td>
+</tr>
+<tr>
+    <td class="label">Address</td>
+    <td><input type="text" value="7 Houndstooth Rd."></td>
+</tr>
+<tr>
+    <td class="label">City</td>
+    <td><input type="text" value="London"></td>
+</tr>
+<tr>
+    <td class="label">Region</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td class="label">Postal Code</td>
+    <td><input type="text" value="WG2 7LT"></td>
+</tr>
+<tr>
+    <td class="label">Country</td>
+    <td>
+        <select>
+            <option>Russian Federation</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td class="label">US Home Phone</td>
+    <td><input type="text" value="(234)234-2342"></td>
+</tr>
+<tr>
+    <td class="label">Photo</td>
+    <td><input type="text" value="EmpID9.bmp"></td>
+</tr>
+</table>
+
+<div class="section">Optional Info</div>
+<div class="toolbar">
+<span>B</span><span>I</span><span>U</span><span>S</span>
+<span>H1</span><span>H2</span>
+<span>X</span>
+</div>
+
+<textarea>
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German ZZZ.
+</textarea>
+
+<table>
+<tr>
+    <td class="label">Preferred Shift</td>
+    <td>
+        <label><input type="radio" name="s"> Regular</label>
+        <label><input type="radio" name="s" checked> Gravy Yard</label>
+    </td>
+</tr>
+<tr>
+    <td class="label">Active?</td>
+    <td><input type="checkbox"></td>
+</tr>
+<tr>
+    <td class="label">Are you human?</td>
+    <td>
+        <span class="captcha">TIDAWO</span> &nbsp; Click to change
+    </td>
+</tr>
+</table>
+
+<div class="buttons">
+    <button>Submit</button>
+    <button>Cancel</button>
+</div>
+
+<div class="small">* required</div>
+
+</div>
+
+</body>
+</html>
