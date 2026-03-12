@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đăng Ký</title>
+
+<style>
+body { font-family: Arial; padding:20px; }
+
+form { width:400px; }
+
+input { width:100%; padding:6px; margin:5px 0; }
+
+.error {
+    color:red;
+    font-size:13px;
+}
+
+.success {
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Đăng ký tài khoản</h2>
+
+<form id="form">
+
+Họ và tên:
+<input id="fullname">
+<div class="error" id="fullnameError"></div>
+
+Email:
+<input id="email">
+<div class="error" id="emailError"></div>
+
+Số điện thoại:
+<input id="phone">
+<div class="error" id="phoneError"></div>
+
+Mật khẩu:
+<input type="password" id="password">
+<div class="error" id="passwordError"></div>
+
+Xác nhận mật khẩu:
+<input type="password" id="confirm">
+<div class="error" id="confirmError"></div>
+
+Giới tính:<br>
+<label><input type="radio" name="gender" value="Nam"> Nam</label>
+<label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+<div class="error" id="genderError"></div>
+
+<label>
+<input type="checkbox" id="terms"> Đồng ý điều khoản
+</label>
+<div class="error" id="termsError"></div>
+
+<br><br>
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<div id="success"></div>
+
+<script src="script22.js"></script>
+
+</body>
+</html>
